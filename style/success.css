@@ -1,0 +1,115 @@
+.payment-inner img{
+    width: 300px;
+    height: 300px;
+}
+
+.order-summary{
+    padding-top: 3em;
+    font-size: 1.5em;
+}
+
+.payment-outter {
+    padding: 5em;
+    max-width: 1052px;
+    margin: 0 auto;
+    border-radius: 20px;
+    background: var(--background-gray);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.payment-inner {
+    display: grid;
+    margin: 0 auto;
+    justify-content: center;
+    align-items: center;
+}
+
+.payment-inner p {
+    margin-top: 1em;
+    vertical-align: middle;
+    font-weight: bold;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+}
+
+.checkout-view{
+    max-width: 1052px;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    border-radius: 20px;
+    background: var(--background-gray);
+}
+
+.card-num-input{
+    margin-top: 1.5em;
+    display: grid;
+    grid-template-columns: auto;
+    gap: .3em;
+}
+
+.card-num-input label {
+    padding: .3em 0;
+}
+
+.card-num-input input {
+    border-radius: 10px;
+    border: 2px solid black;
+    padding: .5em;
+}
+
+.checkout-dates input {
+    border-radius: 10px;
+    border: 2px solid black;
+    padding: .5em;
+}
+
+.checkout-dates label {
+    padding: .3em 0;
+}
+
+.checkout-dates {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    gap: .3em;
+}
+
+.checkout-view button{
+    margin: 2em 0;
+    display: flex;
+    padding: 1em 3em;
+    width: 100%; 
+    text-align: center;
+    justify-content: center;
+    border-radius: 10px;
+    color: white;
+    background-color: var(--font_green);
+    border: 1px solid var(--font_green);
+}
+
+.success-content form {
+    display: grid;
+    padding: 0;
+    margin: 0;
+}
+
+.back-to-cars {
+    justify-content: center;
+    align-items: center;
+    background-color: var(--font_green);
+    color: white;
+    margin-top: 5em;
+    padding: 1em;
+    cursor: pointer;
+    border-radius: 10px;
+    border: 2px solid var(--font_green);
+}
+
+.back-to-cars:hover{
+    background-color: #3a6d2e;
+    border: 2px solid #3a6d2e;
+}

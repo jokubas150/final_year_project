@@ -1,0 +1,233 @@
+.view-car {
+    justify-content: center;
+    width: 95%;
+    margin: 0 auto;
+    border-radius: 20px;
+    background: var(--background-gray);
+}
+
+.view-car .car-view-title{
+    display: flex;
+    padding: 2em 0;
+    font-size: 1.5em;
+    justify-content: center;
+}
+
+.form-view-car{
+    max-width: 1052px;
+    margin: 0 auto;
+    padding: .5em;
+}
+
+.view-car-image img {
+    box-shadow: 0 10px 10px rgba(0, 0, 0, .2);
+    border-radius: 10px;
+    width: 30rem;
+    height: 25rem;
+}
+
+.view-car-image {
+    display: grid;
+    grid-template-columns: 50% 50%;
+}
+
+.view-car-details p {
+    padding-bottom: 2em;
+}
+
+.view-car-details{
+    box-shadow: 0 10px 10px rgba(0, 0, 0, .01);
+    border-radius: 10px;
+    column-gap: 2em;
+    background-color: white;
+    padding: 4rem;
+    display: grid;
+    grid-template-columns: 120px 120px 120px;
+    justify-content: center;
+    border: 2px solid var(--font_green);
+}
+
+.view-car-details label {
+    text-transform: uppercase;
+    color: var(--font_green);
+    font-size: 1em;
+    font-weight:bolder;
+}
+
+.view-car-prices{
+    padding: 3em 0 3em 0;
+    column-gap: 5.3em;
+    display: grid;
+    grid-template-columns: 200px 200px 200px 200px;
+}
+
+.view-car-prices label{ 
+    font-size: .6em;
+    display: flex;
+    justify-content: center;
+}
+
+.view-car-prices p {
+    font-size: 1.3em;
+    font-weight: bold;
+    display: flex;
+    justify-content: center;
+}
+
+.price_min, .price_h, .price_day, .price_mile {
+    border: 2px solid var(--font_green);
+    box-shadow: 0 10px 10px rgba(0, 0, 0, .1);
+    border-radius: 10px;
+    padding: .6em;
+    background-color: white;
+}
+
+.view-car-user-details{
+    background-color: white;
+    padding: 1em 1em;
+    border-radius: 10px;
+    border-bottom: 0.3em solid var(--font_green);
+    border-top: 0.3em solid var(--font_green);
+}
+
+.view-car-inputs {
+    margin-top: 2em;
+    display: grid;
+    grid-template-columns: auto auto auto;
+    column-gap: 1em;
+}
+
+.view-car-inputs input {
+    border-radius: 10px;
+    padding: .5em;
+    border: 2px solid var(--font_green);
+}
+
+.reserve-btn {
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    cursor: pointer;
+    border-radius: 10px;
+    color: white;
+    background-color: var(--font_green);
+    border: 2px solid var(--font_green);
+}
+
+.reserve-btn:hover{
+    background-color: #337029;
+    border: 2px solid #337029;
+    scale: 1.1;
+}
+
+.view-car-user-details p{
+    border-bottom: 1px solid var(--font_green);
+}
+
+.car-user-details{
+    margin-top: .5em;
+    display: grid;
+    gap: .5em;
+    grid-template-columns: 130px 350px;
+}
+
+.car-user-details label {
+    font-weight: bold;
+    color: var(--font_green);
+    text-transform: uppercase;
+}
+
+.view-car-review {
+    border-radius: 10px;
+    background-color: var(--font_green);
+    max-width: 1052px;
+    margin: 2em auto;
+    padding: .5em;
+}
+.delete-post {
+    display: inline;
+}
+
+.review {
+    margin-left: 1em;
+    width: 95%;
+    display: inline-block;
+    border: 1px solid black;
+    color: var(--font_colour);
+    background-color: white;
+    padding: .5em;
+    border-radius: 10px;
+    box-shadow: 0 10px 10px rgba(0, 0, 0, .1);
+}
+
+.review-text-review p {
+    width: 100%;
+    display: inline-block;
+    border: 1px solid black;
+    color: var(--font_colour);
+    background-color: white;
+    padding: .5em;
+    border-radius: 10px 0 0 10px;
+    box-shadow: 0 10px 10px rgba(0, 0, 0, .1);
+}
+
+.review-text-review {
+    display: flex;
+    padding: .5em;
+}
+
+.delete-post button {
+    padding: .65em;
+    cursor: pointer;
+    border-radius: 0 10px 10px 0 ;
+    border: 2px solid var(--font_red_danger);
+    background-color: var(--font_red_danger);
+}
+
+.delete-post button:hover {
+    border: 2px solid black;
+}
+
+.view-car-review h3 {
+    color: white;
+    padding: .5em;
+}
+
+.submit-review {
+    display: flex;
+    padding: .5em;
+}
+
+.submit-review-heading {
+    margin-top: 2em;
+    margin-bottom: .5em;
+    color: white;
+    padding: 0 .6em;
+}
+
+.submit-review input {
+    height: 2.5em;
+    border: 2px solid;
+    width: 100%;
+    border-radius: 10px 0 0 10px;
+}
+
+.submit-review button {
+    cursor: pointer;
+    border: 2px solid black;
+    color: white;
+    background-color: transparent;
+    border-radius: 0 10px 10px 0 ;
+}
+
+.submit-review button:hover {
+    scale: 1.1;
+}
+
+@media screen and (max-width: 1140px) {
+    .view-car-prices {
+       column-gap: 4em;
+    }
+}
+

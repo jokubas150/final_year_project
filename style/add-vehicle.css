@@ -1,0 +1,70 @@
+
+.add-car-form-container h2{
+    display: flex;
+    margin: 0 auto;
+    justify-content: center;
+    padding-bottom: 2em;
+}
+
+.add-car-form-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    max-width: 1052px;
+    background: var(--background_gradient);
+    border-radius: 10px;
+    padding: 1em;
+}
+
+.add-car-inner {
+    margin-left: .5em;
+    gap: .7em;
+    display: grid;
+    grid-template-columns: repeat(2, minmax(15rem, 30rem));
+}
+
+.additional-features{
+    margin-top: .5em;
+    margin-left: .5em;
+    gap: .7em;
+    display: grid;
+    grid-template-columns: repeat(1, 100%);
+}
+
+.add-car-inputs input, select, textarea{
+    padding: 10px;
+    border-radius: 10px;
+    border: 2px solid white;
+}
+
+.add-car-inputs input:focus, select:focus, textarea:focus{
+    outline: none;
+    border: 2px solid var(--font_green);
+}
+
+.add-car-inputs label{
+    font-size: 1rem;
+    font-weight: bold;
+}
+
+.submit-car-div{
+    display: flex;
+    justify-content: center;
+}
+
+.submit-car-div button{
+    width: 99%;
+    cursor: pointer;
+    color: white;
+    background-color: var(--font_green);
+    border-radius: 10px;
+    margin-top: 2em;
+    padding: 1em 2em;
+    border: 2px solid var(--font_green);
+}
+
+.submit-car-div button:hover{
+    background-color: #416d31;
+    border: 2px solid var(--font_green);
+}

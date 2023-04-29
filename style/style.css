@@ -1,0 +1,595 @@
+:root{
+    --form_background: #f7f7f5;
+    --background-gray: rgb(229,229,231);
+    --background_gradient: radial-gradient(circle, rgba(239,239,242,1) 0%, rgba(233,233,236,1) 5%);
+    --font_colour: #272727;
+    --font_Anton: 'Anton', sans-serif;
+    --font_green: #346321;
+    --font_red_danger: #F54D4D;
+    --font_inter: 'Inter', sans-serif;
+}
+
+* {
+    margin: 0;
+    font-family: var(--font_inter);
+}
+
+/* Navigation Bar */
+.nav-bar li, ul, a {
+    font-weight: bold;
+    list-style-type: none;  
+    display: flex;
+    text-decoration: none;
+}
+
+.nav-bar {
+    border-radius: 0 0 10px 10px;
+    width: 100%;
+	position: -webkit-sticky; /* For Safari Browser */
+	position: sticky;
+    box-shadow: 0 10px 10px rgba(0, 0, 0, .1);
+    background: var(--background_gradient);
+	top: 0;
+    margin-bottom: 2rem;
+}
+
+.nav-contents{
+    position: relative;
+    margin: 0 auto;
+    display: flex;
+    height: 110px;
+    max-width: 1300px;
+    justify-content: space-between;
+}
+
+.left-nav {
+    display: flex;
+}
+
+.nav-logo a {
+    color: var(--font_green);
+    font-size: 2rem;
+    padding: 1.4rem 0;
+    font-family: var(--font_Anton);
+    position: relative;
+}
+
+/* LEFT NAV */
+.left-nav ul {
+    padding: 1.25rem 0;
+}
+
+.left-nav ul li a{
+    color: var(--font_colour);
+    padding: 22px .5rem;
+}
+
+.left-nav li a:hover {
+    color: var(--font_green);
+    text-decoration: underline;
+    text-decoration-color: var(--font_colour);
+}
+
+.dropdown{
+    padding: .5rem 0;
+}
+
+.dropdown .dropbtn {
+    font-size: 16px;  
+    border: none;
+    outline: none;
+    color: var(--font_colour);
+    padding: 14px 16px;
+    background-color: inherit;
+    font-family: inherit;
+    margin: 0;
+    font-weight: bold;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+.dropdown-content a {
+    float: none;
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.dropdown-content a:hover {
+    color: white;
+    background-color: var(--font_green);
+}
+
+.dropdown .dropbtn:hover{
+    color: white;
+    background-color: var(--font_green);
+}
+
+/* Right NAV */
+.right-nav {
+    padding: 1.95rem 0;
+}
+
+.right-nav a {
+    color: var(--font_colour);
+    padding: 10px;
+}
+
+.right-nav button {
+    margin-top: .3rem;
+    margin-right: 1.5rem;
+    padding: .4rem 1rem;
+    border-radius: .8rem;
+    background-color: transparent;
+    cursor: pointer;
+    border: 2px var(--font_green) solid;
+}
+
+.right-nav button:hover {
+    color: var(--background-gray);
+    background-color: var(--font_green);
+}
+
+.right-nav ul a:hover {
+    text-decoration: underline;
+    text-decoration-color: var(--font_colour);
+    color: var(--font_green);
+}
+
+/* HEADER */
+header {
+    border-radius: 15px;
+    background: var(--background_gradient);
+    color: var(--font_colour);
+    width: 95%;
+    overflow: hidden;
+    margin: 0 auto;
+}
+
+.header-content {
+    margin: 0 auto;
+    max-width: 1052px;
+    display: flex;
+    padding: 5rem 0;
+}
+/* HEADER LEFT */
+
+header .header-left p, h2{
+    padding: .5rem;
+    max-width: 35rem;
+}
+
+header .header-left {
+    width: 50%;
+}
+
+header .header-left button {
+    font-weight: bold;
+    background-color: var(--font_green);
+    color: white;
+    padding: .8rem 2.5rem;
+    margin-top: .5rem;
+    margin-left: .5rem;
+    border-radius: 10px;
+    cursor: pointer;
+    border: 2px var(--font_green) solid;
+}
+
+header .header-left button:hover {
+    background-color: transparent;
+    color: var(--font_colour);
+    border: 2px var(--font_green) solid;
+}
+
+/* HEADER RIGHT */
+
+header .header-right {
+    width: 50%;
+}
+
+header .header-right img {
+    border-radius: 10px;
+    float: right;
+    width: 20em;
+    height: 20em;
+}
+
+/* INDEX PAGE */
+.main-content-index {
+    margin: 0 auto;
+    display: flex;
+    margin-top: 1em;
+}
+
+.index-contents {
+    border-radius: 15px;
+    background: var(--background_gradient);
+    display: grid;
+    place-items: center;
+    padding: 10vh 0;
+    margin: 0 auto;
+    width: 95%;
+}
+
+.main-content-index .index-info img {
+    width: 20em; 
+    height: 15em; 
+    border-radius: 50%;
+}
+
+.main-content-index .index-info {
+    max-width: 1052px;
+    padding: 10vh 0;
+    text-align: center;
+    place-items: center;
+    display: grid;
+    grid-template-columns: repeat(3, minmax(15rem, 35rem));
+    grid-auto-rows: minmax(auto, auto);
+    gap: 40px;
+    border-bottom: 0.2em solid var(--form_background);
+}
+
+/* */
+/* REGISTER PAGE */
+/* */
+
+.register_form_container {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    width: clamp(25rem, 50%, 60rem);
+}
+
+.register_form_container form {
+    color: var(--font_colour);
+    background: var(--background_gradient);
+    padding: 2.5rem;
+    border-radius: 10px;
+    box-shadow: 0 10px 10px rgba(0, 0, 0, .1);
+}
+
+.register_form_container form h2 {
+    margin: 0 auto;
+    text-transform: uppercase;
+    padding-bottom: 2.5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.errors p {
+    font-size: 1.1rem;
+    font-weight: bold;
+}
+
+.errors .error-msg {
+    border-radius: 10px;
+    margin-bottom: 1rem;
+    margin-left: .9rem;
+    width: 90%;
+    padding: .5rem .3rem;
+    background-color: var(--font_red_danger);
+    font-weight: bold;
+    color: var(--font_colour);
+    display: block;
+}
+
+.register_form_container form .register_form_names {
+    margin-top: 1rem;
+    display: grid;
+    grid-template-columns: repeat(2, minmax(15rem, 30rem));
+    grid-auto-rows: minmax(auto, auto);
+}
+
+.register_form_container form .register_form_names input { 
+    width: 80%;
+    padding: 10px;
+    border-radius: 10px;
+    border: var(--font_colour);
+    margin: 10px 0 10px 10px;
+}
+
+.register_form_container form .register_form_details input {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 90%;
+    padding: 10px;
+    border-radius: 10px;
+    border: var(--font_colour);
+    margin: 10px;
+}
+
+.register_form_container form .register_form_details input {
+    margin-bottom: 1rem;
+}
+
+.register_form_container form label {
+    text-transform: uppercase;
+    margin-left: .9rem;
+}
+
+.register_form_container .register_form_details button {
+    cursor: pointer;
+    margin-top: 1rem;
+    font-weight: bold;
+    background-color: var(--font_green);
+    color: var(--background-gray);
+    border: 2px solid var(--font_green);
+    border-radius: 10px;
+    text-transform: uppercase;
+    padding: 0.6rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 95%;
+}
+
+.register_form_container .register_form_details button:hover {
+    background-color: #416d31;
+}
+
+.terms_container input {
+    width: 5px;
+}
+
+.terms_container a {
+    display: inline;
+}
+
+.terms_container {
+    align-items: center;
+    grid-template-columns: 20px 500px;
+    display: grid;
+    margin-top: 1rem;
+}
+
+/* */
+/*LOGIN PAGE */
+/* */
+.login_form_container form h2 {
+    text-transform: uppercase;
+    padding-bottom: 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.login_form_container form label {
+    text-transform: uppercase;
+    margin-left: .9rem;
+}
+
+.login_form_container {
+    min-height: 80.8vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+}
+
+.forgot-password{
+    margin-left: 20px;
+}
+
+.reset-link-sent-msg{
+    margin-left: 10px;
+}
+
+
+.login_form_container form {
+    color: var(--font_colour);
+    background: var(--background_gradient);
+    width: clamp(30rem, 50%, 40rem);
+    padding: 2.5rem;
+    border-radius: 10px;
+    box-shadow: 0 10px 10px rgba(0, 0, 0, .1);
+}
+
+.login_form_container form .login_form_details input {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 90%;
+    padding: 10px;
+    border-radius: 10px;
+    border: var(--font_colour);
+    margin: 10px 0 10px 10px;
+}
+
+.login_form_container form .login_form_details {
+    margin-top: 1rem;
+    display: grid;
+}
+
+.login_form_container .login_form_details button {
+    cursor: pointer;
+    margin-left: 6rem;
+    margin-top: 1.5rem;
+    font-weight: bold;
+    background-color: var(--font_green);
+    color: white;
+    border: 2px solid var(--font_green);
+    border-radius: 10px;
+    text-transform: uppercase;
+    padding: 0.6rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 60%;
+}
+
+.login_form_container .login_form_details button:hover {
+    background-color: #416d31;
+}
+
+.outter_contact {
+    min-height: 70vh;
+    border-radius: 10px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: 1052px;
+    background: var(--background_gradient);
+}
+.contact-heading {
+    padding: 0 2em;
+    margin: 0;
+    text-align: center;
+}
+
+.contact-us-form {
+    display: grid;
+    grid-template-columns: 40em;
+    row-gap: .5em;
+    padding: 1em;
+}
+
+.contact-us-form input{
+    padding: 1em;
+    border-radius: 10px;
+    border: 2px solid var(--font_colour);
+}
+
+.contact-us-form textarea {
+    min-height: 100px;
+    max-height: 100px;
+    border-radius: 10px;
+    border: 2px solid var(--font_colour);
+}
+
+.contact-us-form button {
+    cursor: pointer;
+    color: white;
+    background-color: var(--font_green);
+    border: 2px solid var(--font_green);
+    border-radius: 10px;
+    margin-top: 2em;
+    padding: .7em;
+}
+.outter-help {
+    margin: 0 auto;
+    max-width: 1052px;
+    background: var(--background_gradient);
+    border-radius: 10px;
+    padding: 1em;
+}
+
+.outter-help h2{
+    margin: 0 auto;
+    padding: 20px 0;
+    text-align: center;
+}
+
+.collapsible { /* https://www.w3schools.com/howto/howto_js_collapsible.asp */
+    background-color: var(--font_green);
+    color: white;
+    cursor: pointer;
+    padding: 18px;
+    width: 100%;
+    border: none;
+    text-align: left;
+    outline: none;
+    font-size: 15px;
+    border-radius: 10px;
+}
+
+.active, .collapsible:hover {
+  background-color: #3A6F2A;
+}
+
+.collapsible:after {
+    content: '\002B';
+    color: white;
+    font-weight: bold;
+    float: right;
+    margin-left: 5px;
+}
+
+.active:after {
+    content: "\2212";
+}
+
+.content { /* https://www.w3schools.com/howto/howto_js_collapsible.asp */
+    margin: 0 10px 10px 10px;
+    max-width: 1015px;
+    padding: 0px;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.2s ease-out;
+    background-color: white;
+}
+
+/* footer CSS */
+footer {
+    margin-top: 1em;
+    border-radius: 10px 10px 0 0;
+    padding: 5vh;
+    bottom: 0;
+    text-align: center;
+    background: var(--background_gradient);
+}
+
+.footer-ul {
+    list-style-type: square;
+    margin: 0 auto;
+    max-width: 1052px;
+    padding-top: 1em;
+    text-align: left;
+    display: grid;
+    color: var(--font_colour);
+}
+
+.footer-ul a {
+    margin: .5em 0;
+    color: var(--font_colour);
+}
+
+.terms-outter {
+    border-radius: 10px;
+    margin: 0 auto;
+    max-width: 1052px;
+    list-style-type: circle;
+    justify-content: center;
+    align-items: center;
+    background: var(--background_gradient);
+    padding: 1em;
+    margin-bottom: 1em;
+}
+
+.terms-inner {
+    padding: 2em;
+}
+
+.terms-inner h2, h3 { 
+    margin: 1em 0;
+    padding: 0;
+}
+
+@media screen and (max-width: 1300px) {
+    .cars{
+        padding: 2em 0;
+        gap: 1em;
+        display: grid;
+        grid-template-columns: repeat(4, minmax(150px, 200px));
+        grid-template-rows: auto;
+        place-items: center;
+        justify-content: center;
+    }
+}
